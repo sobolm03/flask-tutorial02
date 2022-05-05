@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Home Page</title>
-    </head>
-    <body>
-        <h1>Home Page!</h1>
-        {% for x in content %}
-            <p>{{x}}</p>
-            {% if x == "Tim" %}
-            <p>TIM!</p>
-            {% else %}
-            <p>Not Tim...</p>
-            {% endif %}
-        {% endfor %}
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title %} {% endblock %}
+{% block content %}
+<h1>Test</h1>
+{% endblock %}
